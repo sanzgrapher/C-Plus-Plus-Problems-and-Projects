@@ -12,8 +12,10 @@ datatype variablename;
 
 *///////////
 class hero{
-int health;
-int level;
+    public:
+        
+        int health;
+        int level;
 };
 
 int main()

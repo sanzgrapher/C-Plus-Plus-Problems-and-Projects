@@ -5,6 +5,7 @@ A C++ program is a collection of **commands or statements**.
   
 Below is a simple program template.
 
+```cpp
     #include <iostream>
     using namespace std;
     
@@ -13,13 +14,15 @@ Below is a simple program template.
     
       return 0;
     }
-   
+
+```   
 
 For now, remember that the entry point of every C++ program is the main() function, irrespective of what the program does.
 Curly brackets { } indicate the beginning and end of a function, which can also be called the function's body. The information inside the brackets indicates what the function does when executed.
 # First C++ Program
 Let's output "Hello world!" to the screen!
-To do that, we will add `cout << "Hello world!";` line to our main() function body:
+To do that, we will add ` cout << "Hello world!";` line to our main() function body:
+```cpp
 #include  <iostream>  //header file included iostream >> for standrd input and out header
 
     using  namespace  std;  
@@ -29,6 +32,7 @@ To do that, we will add `cout << "Hello world!";` line to our main() function bo
     return  0;   
     }
 
+```
 **cout** is used to perform output on the standard output device which is usually the display screen.  
 cout  is used in combination with the **insertion operator <<**.  
 Note that you can add **multiple** insertion operators after cout.
@@ -54,6 +58,7 @@ The compiler ignores everything that appears in the comment, so none of that inf
   
 A comment beginning with **two slashes (//)** is called a single-line comment. The slashes tell the compiler to ignore everything that follows, until the end of the line.
 
+```cpp
     #include  <iostream>
     using  namespace std;
     
@@ -63,4 +68,5 @@ A comment beginning with **two slashes (//)** is called a single-line comment. T
     cout <<  "Hello world!";
     return  0;
     }
-When the above code is compiled, it will ignore the **// prints "Hello world"** statement**.**
+
+```When the above code is compiled, it will ignore the **// prints "Hello world"** statement**.**
