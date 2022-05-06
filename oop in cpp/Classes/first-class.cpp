@@ -1,38 +1,16 @@
 #include <iostream>
 using namespace std;
+class hero
+{
+public:
+    string name; 
+    int health;
 
-// created class
-// syntax
-/*/////////////////
-class class_name{
-
-datatype variablename;
-
+private:
+    int power;
 };
-
-*///////////
-class hero{
-    public:
-        
-        int health;
-        int level;
-};
-
 int main()
 {
-// creating object
-//syntax
-/*
-class_name objectname;
-*/
-hero rajesh;
 
-
-// acessing the class
-cout << "Health is " << rajesh.health << endl;
-
-
-// cout << sizeof(h1) << endl;
-
-return 0;
+    return 0;
 }
