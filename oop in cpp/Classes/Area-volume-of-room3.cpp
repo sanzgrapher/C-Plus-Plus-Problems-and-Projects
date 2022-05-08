@@ -27,7 +27,7 @@ int smallroom::calc()
 int main() 
 {
     smallroom s1;
-    Room r1;
+    Room r1;:
     s1.inits(2, 2, 2);
     cout << s1.calc();
 

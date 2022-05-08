@@ -31,6 +31,7 @@ string myname;
 | Calculate area and volume | using class and objects to Get and print area and volume (using `public:`)     |  [View](Area-volume-of-room.cpp)                |
 | Calculate area and volume | using class and objects to Get and print area and volume (using `private:`)     |  [View](Area-volume-of-room2.cpp)                |
 | Calculate area and volume | using class and objects to Get and print area and volume (using `protected:`)     |  [View](Area-volume-of-room3.cpp)                |
+| Nesting of a member function | A simple example of  the nested member function   |  [View](Nesting-of-a-member-function.cpp)                |
 
 
 
