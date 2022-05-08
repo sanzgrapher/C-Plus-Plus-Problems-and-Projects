@@ -3,7 +3,7 @@ using namespace std;
 class hero
 {
 public:
-    string name; 
+    string name;
     int health;
 
 private:
@@ -11,7 +11,10 @@ private:
 };
 int main()
 {
-    cout << "The volume of box1 is : " << endl;
+    hero h1;
+    cout << "Hero name : " << endl;
+    cin >> h1.name;
+    cout << h1.name;
 
     return 0;
 }
