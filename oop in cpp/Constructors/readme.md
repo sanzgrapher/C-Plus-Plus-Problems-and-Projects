@@ -16,12 +16,14 @@
 
 ##### Q1. In which access should a constructor be defined, so that object of the class can be created in any function ?
 
-- [x] Public
 - [ ] Protected
 - [ ] Private
+- [x] Public
 - [ ] Any access specifier will work
 
-
+ Solution description
+ The constructor function should be available to athe parts of the program where the object is createHence it is advised to define it in public access that any other function is able to create objects.
+m  
 
 
 
