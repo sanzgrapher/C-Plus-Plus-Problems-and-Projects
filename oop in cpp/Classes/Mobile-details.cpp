@@ -1,6 +1,7 @@
 
 #include<iostream>
 using namespace std;
+
 class smartphone{
     public:
     int price;

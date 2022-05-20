@@ -25,8 +25,7 @@ int main()
     r1.length = 100;
     r1.breadth = 85;
     r1.height = 65;
-    r1.getarea();
-    r1.getvolume();
+  
     cout << "the volume of the room is : " << r1.getvolume() << endl;
     cout << "the volume of the room is : " << r1.getarea() << endl;
 

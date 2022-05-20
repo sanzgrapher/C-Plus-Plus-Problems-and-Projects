@@ -15,7 +15,7 @@ private:
 // Member functions definitions including constructor
 Line::Line(void)
 {
-    cout << "Object is being created" << endl;
+    // cout << "Object is being created" << endl;
 }
 void Line::setLength(double len)
 {
