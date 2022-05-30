@@ -10,14 +10,16 @@ public:
 };
 // ///////////////////////////////////////////
 void circle::getRadius()
-{
+{ 
     cout << "Input Radius" << endl;
     cin >> radius ;
     printArea();
 }
 void circle::printArea()
 {
-    cout << radius << endl;
+    float area;
+    area = 3.14 * radius * radius;
+    cout << "Area : " << area << endl;
 }
 // ///////////////////////////////////////////
 
