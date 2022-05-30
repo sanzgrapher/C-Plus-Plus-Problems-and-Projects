@@ -3,7 +3,7 @@
 using namespace std;
 // declaring class
 class student;
-
+ 
 //  defining of class
 class student
 {
