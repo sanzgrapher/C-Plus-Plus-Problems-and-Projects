@@ -1,17 +1,30 @@
-#include <iostream>  
+#include <iostream>
 using namespace std;
-class item{
-    public:
-    static int count;
-    item(){
-        count++;
-        cout << "called  " << count<<endl;
-    }
+class test{
+    static int a;
+    int no;
 
+public:
+    int disp(int x)
+    {
+        no = x;
+        cout << "number : " << no << endl;
+        a++;
+        return 0;
+    }
+    static int stFunction()
+    {
+        cout << "called : " << a << endl;
+
+        return 0;
+    }
 };
-int item::count=0;
-int main() 
+int test::a=0;
+int main()
 {
-    item i1, i2, i3, i4;
+    test t1,t2;
+    t1.disp(1);
+    t2.disp(3);
+    t1.stFunction();
     return 0;
 }
