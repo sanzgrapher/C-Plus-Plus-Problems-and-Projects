@@ -1,35 +1,39 @@
 #include <iostream>
 using namespace std;
-
-class Check
+class Unary
 {
-private:
-    int i;
+    int a, b;
 
 public:
-    Check()
+    Unary(int x, int y)
     {
-        i = 0;
+        a = x;
+        b = y;
     }
+
     void operator++()
     {
-        ++i;
+        a++;
+        b++;
     }
-    void Display()
+    void operator--()
     {
-        cout << "i=" << i << endl;
+        a--;
+        b--;
+    }
+    void displayData()
+    {
+        cout << "a = " << a << " and b = " << b << endl;
     }
 };
-
 int main()
 {
-    Check obj;
-
-    obj.Display();
-
-    ++obj;
-
-    obj.Display();
-
+    Unary u(3, 4), u1(6, 7);
+    cout << "Incremented Data : " << endl;
+    ++u;
+    u.displayData();
+    cout << "Decremented Data : " << endl;
+    --u1;
+    u1.displayData();
     return 0;
 }
