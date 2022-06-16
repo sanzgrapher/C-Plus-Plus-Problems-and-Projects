@@ -22,13 +22,13 @@ class times{
         cout << minutes << "minutes"<<endl;
 
     }
-    void sum(times, times);// passing 2 objects
+    void sum(times , times );// passing 2 objects
 };
 
-void times::sum(times t1,times t2){ // t1 and t2 are obj
-    minutes = t1.minutes + t2.minutes;
+void times::sum(times t12,times t23){ // t1 and t2 are obj
+    minutes = t12.minutes + t23.minutes;
     hours = minutes / 60;
-    hours = hours+t1.hours + t2.hours;
+    hours = hours+t12.hours + t23.hours;
     minutes = minutes % 60;
 }
 
