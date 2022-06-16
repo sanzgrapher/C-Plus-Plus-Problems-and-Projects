@@ -1,22 +1,22 @@
 
 #include <iostream>
 using namespace std;
-class Multi
+class product
 {
     int a;
 
 public:
-    Multi()
+    product()
     {
     }
-    Multi(int x)
+    product(int x)
     {
         a = x;
     }
 
-    Multi operator*(Multi obj)
+    product operator*(product obj)
     {
-        Multi m;
+        product m;
         m.a = a * obj.a;
         return m;
     }
@@ -28,8 +28,8 @@ public:
 };
 int main()
 {
-    Multi m1(3), m2(5);
-    Multi m3 = m1 * m2;
+    product m1(3), m2(5);
+    product m3 = m1 * m2;
     m3.displayData();
     return 0;
 }
