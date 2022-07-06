@@ -3,6 +3,7 @@
 using namespace std;
 class Max{
     int no;
+    
     public:
     // constructor with arguments having default value 0
     Max(int no =0){
