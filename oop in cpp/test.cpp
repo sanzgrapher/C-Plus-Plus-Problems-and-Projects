@@ -1,44 +1,27 @@
-#include <iostream>
-#include <string>
+#include<iostream>
 using namespace std;
-class student
-{
-    string name;
-    int rollno;
-    string address;
+class box{
+    int a=10;
+    int &b = a;
+
 
 public:
-    void set()
-    {
-        cout << "Enter your name" << endl;
-        cin >> name;
-        cout << "Enter your roll no" << endl;
-        cin >> rollno;
-        cout << "Enter your address" << endl;
-        cin >> address;
-    }
-    void print()
-    {
-        cout << "Your name is" << name << endl;
-        cout << "Your roll no is" << rollno << endl;
-        cout << "Your address is" << address << endl;
-    }
+   
+
+        void put (){
+            cout << a;
+            cout << b;
+            b = 15;
+            cout << a;
+            cout << b;
+        }
 };
-class derived_student : public student
-{
-public:
-    void set()
-    {
-        set();
-    }
-    void get()
-    {
-        print();
-    }
-};
-int main()
-{
-    student s;
-    s.set();
-    s.print();
+int main(){
+    box b1;
+    // b1.a = 10; // incorrect
+    // b1.b = 10; //correct
+
+   
+   
+    b1.put();
 }
