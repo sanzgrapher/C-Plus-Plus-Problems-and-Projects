@@ -2,27 +2,28 @@
 using namespace std;
 class Demo
 {
-    int a;
+    static int count;
+
 public:
-    void setdata(int x)
+    Demo()
     {
-        a = x;
+        count++;
+        cout << "Object created= " << count << endl;
     }
-    Demo square(Demo *p){
-        Demo y;
-        y.a = p->a * p->a;
-        return y;
-    }
-    
-    
-    void putdata(){
-        cout << a;
+    ~ Demo()
+    {
+        cout << "Object Destroyed= " << count << endl;
+        count--;
     }
 };
+int Demo::count;
 int main()
 {
-    Demo o1,  o3;
-    o1.setdata(10);
-    o3 = o3.square(&o1);
-    o3.putdata();
+    Demo a1, a2, a3;
+    {
+        Demo a4;
+    }
+    {
+        Demo a1;
+    }
 }
