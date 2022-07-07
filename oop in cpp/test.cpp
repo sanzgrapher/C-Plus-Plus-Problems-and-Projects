@@ -1,27 +1,28 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class box{
-    int a=10;
-    int &b = a;
-
-
+class Demo
+{
+    int a;
 public:
-   
-
-        void put (){
-            cout << a;
-            cout << b;
-            b = 15;
-            cout << a;
-            cout << b;
-        }
+    void setdata(int x)
+    {
+        a = x;
+    }
+    Demo square(Demo *p){
+        Demo y;
+        y.a = p->a * p->a;
+        return y;
+    }
+    
+    
+    void putdata(){
+        cout << a;
+    }
 };
-int main(){
-    box b1;
-    // b1.a = 10; // incorrect
-    // b1.b = 10; //correct
-
-   
-   
-    b1.put();
+int main()
+{
+    Demo o1,  o3;
+    o1.setdata(10);
+    o3 = o3.square(&o1);
+    o3.putdata();
 }
