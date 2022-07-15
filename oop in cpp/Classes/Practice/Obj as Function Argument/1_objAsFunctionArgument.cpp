@@ -10,26 +10,26 @@
 using namespace std;
 class times{
     int hours;
-    int minutes;
+    int min;
     public:
     void getTime(int h ,int m){
         hours = h;
-        minutes = m;
+        min = m;
 
     }
     void putTime(void){
         cout << hours << "Hours and ";
-        cout << minutes << "minutes"<<endl;
+        cout << min << "min"<<endl;
 
     }
     void sum(times , times );// passing 2 objects
 };
 
 void times::sum(times t12,times t23){ // t1 and t2 are obj
-    minutes = t12.minutes + t23.minutes;
-    hours = minutes / 60;
+    min = t12.min + t23.min;
+    hours = min / 60;
     hours = hours+t12.hours + t23.hours;
-    minutes = minutes % 60;
+    min = min % 60;
 }
 
 
